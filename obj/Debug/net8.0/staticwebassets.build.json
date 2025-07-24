@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "+mBsEhF+3BpT5ccN4YqTFV7P8kVBILqRIl/MZIQ/iak=",
+  "Source": "ProductManagementAPI",
+  "BasePath": "_content/ProductManagementAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ProductManagementAPI\\wwwroot",
+      "Source": "ProductManagementAPI",
+      "ContentRoot": "C:\\Users\\jorya\\source\\repos\\ProductManagementAPI\\ProductManagementAPI\\wwwroot\\",
+      "BasePath": "_content/ProductManagementAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\jorya\\source\\repos\\ProductManagementAPI\\ProductManagementAPI\\wwwroot\\filter-pipeline-.png",
+      "SourceId": "ProductManagementAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jorya\\source\\repos\\ProductManagementAPI\\ProductManagementAPI\\wwwroot\\",
+      "BasePath": "_content/ProductManagementAPI",
+      "RelativePath": "filter-pipeline-.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\filter-pipeline-.png"
+    }
+  ]
+}
