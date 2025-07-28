@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using System.Security.Principal;
 using System.Text.Json;
 
-namespace AspNetCoreForBeginners.Filters;
+namespace ProductManagementAPI.Filters;
 
 public class LogActivityFilter : IActionFilter, IAsyncActionFilter
 {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.Filters;
 using System.Diagnostics;
 
-namespace AspNetCoreForBeginners.Filters;
+namespace ProductManagementAPI.Filters;
 
 public class LogSensitiveActionAttribute : ActionFilterAttribute
 {

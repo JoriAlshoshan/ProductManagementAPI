@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace AspNetCoreForBeginners.Middleweres;
+namespace ProductManagementAPI.Middleweres;
 
 public class ProfilingMiddlewere
 {

@@ -85,3 +85,6 @@ C:\Users\jorya\source\repos\ProductManagementAPI\ProductManagementAPI\obj\Debug\
 C:\Users\jorya\source\repos\ProductManagementAPI\ProductManagementAPI\obj\Debug\net8.0\ProductManagementAPI.pdb
 C:\Users\jorya\source\repos\ProductManagementAPI\ProductManagementAPI\obj\Debug\net8.0\ProductManagementAPI.genruntimeconfig.cache
 C:\Users\jorya\source\repos\ProductManagementAPI\ProductManagementAPI\obj\Debug\net8.0\ref\ProductManagementAPI.dll
+C:\Users\jorya\source\repos\ProductManagementAPI\ProductManagementAPI\obj\Debug\net8.0\ProductManagementAPI.sourcelink.json
+C:\Users\jorya\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\config.json
+C:\Users\jorya\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

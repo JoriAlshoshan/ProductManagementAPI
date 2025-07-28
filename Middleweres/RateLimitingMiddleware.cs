@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Mvc.Formatters;
 
-namespace AspNetCoreForBeginners.Middleweres;
+namespace ProductManagementAPI.Middleweres;
 
 public class RateLimitingMiddleware
 {

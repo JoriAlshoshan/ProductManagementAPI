@@ -1,6 +1,16 @@
 [
   {
-    "ContainingType": "AspNetCoreForBeginners.Controllers.ProductsController",
+    "ContainingType": "ProductManagementAPI.Controllers.ConfigController",
+    "Method": "GetConfig",
+    "RelativePath": "Config",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductManagementAPI.Controllers.ProductsController",
     "Method": "Get",
     "RelativePath": "Products",
     "HttpMethod": "GET",
@@ -9,7 +19,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[AspNetCoreForBeginners.Data.Product, ProductManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProductManagementAPI.Data.Product, ProductManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -20,7 +30,7 @@
     ]
   },
   {
-    "ContainingType": "AspNetCoreForBeginners.Controllers.ProductsController",
+    "ContainingType": "ProductManagementAPI.Controllers.ProductsController",
     "Method": "CreateProduct",
     "RelativePath": "Products",
     "HttpMethod": "POST",
@@ -29,8 +39,13 @@
     "Parameters": [
       {
         "Name": "product",
-        "Type": "AspNetCoreForBeginners.Data.Product",
+        "Type": "ProductManagementAPI.Data.Product",
         "IsRequired": true
+      },
+      {
+        "Name": "Accept-Language",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -46,7 +61,7 @@
     ]
   },
   {
-    "ContainingType": "AspNetCoreForBeginners.Controllers.ProductsController",
+    "ContainingType": "ProductManagementAPI.Controllers.ProductsController",
     "Method": "UpdateProdect",
     "RelativePath": "Products",
     "HttpMethod": "PUT",
@@ -55,14 +70,14 @@
     "Parameters": [
       {
         "Name": "product",
-        "Type": "AspNetCoreForBeginners.Data.Product",
+        "Type": "ProductManagementAPI.Data.Product",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AspNetCoreForBeginners.Controllers.ProductsController",
+    "ContainingType": "ProductManagementAPI.Controllers.ProductsController",
     "Method": "GetById",
     "RelativePath": "Products/{id}",
     "HttpMethod": "GET",
@@ -78,7 +93,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AspNetCoreForBeginners.Controllers.ProductsController",
+    "ContainingType": "ProductManagementAPI.Controllers.ProductsController",
     "Method": "DeleteProdect",
     "RelativePath": "Products/{id}",
     "HttpMethod": "DELETE",
@@ -92,5 +107,31 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductManagementAPI.Controllers.UsersController",
+    "Method": "AthunticateUser",
+    "RelativePath": "Users/auth",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ProductManagementAPI.Controllers.AuthenticationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
