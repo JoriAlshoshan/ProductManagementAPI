@@ -1,5 +1,8 @@
 # ProductManagementAPI
+
 A clean and lightweight ASP.NET Core Web API for managing product data with full CRUD operations, Swagger documentation, and custom middleware for logging, profiling, and rate limiting.
+
+---
 
 ## API Endpoints
 
@@ -18,34 +21,34 @@ A clean and lightweight ASP.NET Core Web API for managing product data with full
 - **DELETE /Products/{id}**  
   Deletes a product by its ID.
 
+---
+
 ## Product Schema
 
 The product entity includes basic properties such as ID, Name, and other relevant product details.
 
-## Additional Information
+---
 
-- The project uses Swagger UI for API documentation and testing, accessible at:  
-  `https://localhost:7124/swagger/index.html`
+## Authentication and Authorization
 
-- The database used is SQL Server, managed through SQL Server Management Studio.
-
-- Custom Filters and Middlewares are implemented for logging, action tracking, request profiling, and rate limiting.
+The API implements authentication and authorization features to secure endpoints. You can test these using tools like Postman.
 
 ---
 
-## Filters
+## Additional Features
 
-- **LogActivityFilter**: Logs detailed information before and after executing controller actions, including action name, controller, and input arguments. It supports both synchronous and asynchronous execution to ensure comprehensive logging.
+- Swagger UI for API documentation and testing:  
+  Accessible at `https://localhost:7124/swagger/index.html` when the project is running locally.
 
-- **LogSensitiveActionAttribute**: A simple action filter that flags execution of sensitive actions for debugging or auditing purposes.
+- SQL Server is used as the database, managed through SQL Server Management Studio.
 
----
-
-## Middlewares
-
-- **ProfilingMiddleware**: Measures and logs the time taken to process each HTTP request, helping to monitor performance.
-
-- **RateLimitingMiddleware**: Controls the rate of incoming requests by limiting the number of requests processed within a specified time window to prevent abuse.
+- Custom Filters and Middlewares implemented:  
+  - **Filters:**  
+    - `LogActivityFilter`: Logs detailed information before and after controller actions.  
+    - `LogSensitiveActionAttribute`: Flags sensitive actions for auditing.  
+  - **Middlewares:**  
+    - `ProfilingMiddleware`: Logs time taken for each HTTP request.  
+    - `RateLimitingMiddleware`: Controls request rate to prevent abuse.
 
 ---
 
@@ -54,14 +57,20 @@ The product entity includes basic properties such as ID, Name, and other relevan
 1. Clone the repository and open the project in Visual Studio.  
 2. Update the connection string in `appsettings.json` according to your database setup.  
 3. Run the project.  
-4. Access the Swagger UI to test the API via a browser.  
-5. You can also use tools like Postman to test the endpoints.
+4. Access Swagger UI to test the API via a browser.  
+   
+   > **Note:**  
+   > The Swagger UI link works only when you run the project locally on your machine:  
+   > `https://localhost:7124/swagger/index.html`  
+   > To access the API documentation, make sure the project is running and accessible at this address.
+
+5. Use tools like Postman to test authentication and authorization flows.
 
 ---
 
 ## Project Purpose
 
-To demonstrate how to build a simple API using ASP.NET Core Web API with full CRUD support and interactive documentation via Swagger, enhanced with logging, action tracking, performance profiling, and rate limiting features.
+This project is developed for **educational purposes** to demonstrate how to build a simple yet well-structured ASP.NET Core Web API with full CRUD support, secured endpoints, and advanced features like logging and rate limiting.
 
 ---
 
